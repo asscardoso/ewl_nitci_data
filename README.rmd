@@ -1,0 +1,61 @@
+# README
+
+The following dataset accompanies the article "Effects of Widget Location On Pointing Performance Using the Non-invasive Inductive Tongue-Computer Interface"
+
+## File Structure
+
+### ewl_activation_unit_pose.csv
+
+Each row represents an estimate of the position of the activation unit.
+The data are stored as comma-separated values (CSV) with the following columns:
+
+- `Participant`: 
+Unique participant identifier. 
+- `Widget`
+Widget used during the task. Can be 'Horizontal' for horizontal sliders, "Vertical" for vertical sliders, or "Joystick".
+- `Location`
+The location of the widget along the inductive touchpad.
+- `timestamp`
+Unix timestamp (in seconds) indicating when the sample was recorded.
+- `y`
+Y-coordinate of the activation unit contact point.
+- `x`
+X-coordinate of the activation unit contact point.
+- `contact`
+Boolean indicating whether contact with the inductive touchpad was detected.
+
+## ewl_incorrect_widget_selections.csv
+
+Each row corresponds to the selection of a region outside the boundaries of the widget, i.e. an incorrect selection.
+The data are stored as comma-separated values (CSV) with the following columns:
+
+- `Participant`: 
+Unique participant identifier. 
+- `Widget`
+Widget used during the task. Can be 'Horizontal' for horizontal sliders, "Vertical" for vertical sliders, or "Joystick".
+- `Location`
+The location of the widget along the inductive touchpad.
+-`Duration of Incorrect Selection (s)`
+Duration of incorrect selections. Selecting an area outside widget boundaries requires maintaining contact with the inductive touchpad for 500 ms. The counter starts after the dwell time.
+
+### ewl_fitts_trial.csv
+
+The data was extracted from GoFitts sd1, and therefore follows a similar structure. For information about the content of each column, consult https://www.yorku.ca/mack/FittsLawSoftware/doc/index.html?GoFitts.html.
+
+- `Participant`: 
+Unique participant identifier. 
+- `Widget`:
+Widget used during the task. Can be 'Horizontal' for horizontal sliders, "Vertical" for vertical sliders, or "Joystick".
+- `Location`:
+The location of the widget along the inductive touchpad.
+
+### ewl_fitts_sequence.csv
+
+The data was extracted from GoFitts sd2, and therefore follows a similar structure. For information about the content of each column, consult https://www.yorku.ca/mack/FittsLawSoftware/doc/index.html?GoFitts.html.
+
+- `Participant`: 
+Unique participant identifier. 
+- `Widget`:
+Widget used during the task. Can be 'Horizontal' for horizontal sliders, "Vertical" for vertical sliders, or "Joystick".
+- `Location`:
+The location of the widget along the inductive touchpad.
