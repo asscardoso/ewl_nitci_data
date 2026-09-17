@@ -24,7 +24,7 @@ X-coordinate of the activation unit contact point.
 - `contact`
 Boolean indicating whether contact with the inductive touchpad was detected.
 
-## ewl_incorrect_widget_selections.csv
+### ewl_incorrect_widget_selections.csv
 
 Each row corresponds to the selection of a region outside the boundaries of the widget, i.e. an incorrect selection.
 The data are stored as comma-separated values (CSV) with the following columns:
