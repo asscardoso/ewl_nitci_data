@@ -35,7 +35,7 @@ Unique participant identifier.
 Widget used during the task. Can be 'Horizontal' for horizontal sliders, "Vertical" for vertical sliders, or "Joystick".
 - `Location`
 The location of the widget along the inductive touchpad.
--`Duration of Incorrect Selection (s)`
+- `Duration of Incorrect Selection (s)`
 Duration of incorrect selections. Selecting an area outside widget boundaries requires maintaining contact with the inductive touchpad for 500 ms. The counter starts after the dwell time.
 
 ### ewl_fitts_trial.csv
